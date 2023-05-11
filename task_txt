@@ -29,3 +29,34 @@ Frontend -
 Please note:
 Appropriate Error messages to the user should be prompted in UI.
 If error is of access-token expiry, a new token should be created and used again.
+
+
+
+GridlexEmployee Table
+Id	Name	Dept	sal
+1	x	1	10k
+2	y	1	15k
+3	z	2	20k
+
+Output:
+Dept	total_sal
+1	25k
+2	20k
+
+
+select dept, sum(sal) as total_sal from employee group by dept;
+
+#    subjects = Subject.objects.all()
+
+Input: aaccbbcccdaaaaddde
+Output: a2c2b2c3d1a4d3e1
+
+
+
+A = [ 2,3,3,1,1,4]
+B = [ 3,2,2,5]
+
+Remove common elements from A and B, print the output
+Output: [3,1,1,4,2,5]
+
+
